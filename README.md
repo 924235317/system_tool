@@ -5,3 +5,5 @@ My linux tools
 计算cpu使用率   
 ## get_meminfo  
 计算memory使用率
+## path  
+linux路径相关操作
