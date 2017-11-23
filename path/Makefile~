@@ -1,0 +1,17 @@
+CC=gcc -w -g
+
+SRC=main.c path.c
+OBJ=$(SRC:.c=.o)
+EXE=bin
+
+all:$(OBJ)
+    $(CC) $(OBJ) -o $(EXE)
+
+path.o:
+    $(CC) -c path.c
+main.o:
+    $(CC) -c main.c
+
+clean:
+    rm -rf $(EXE)
+    rm -rf $(OBJ)
